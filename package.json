@@ -1,0 +1,57 @@
+{
+  "name": "react-native-input-autocomplete",
+  "version": "1.0.0",
+  "description": "Input with auto complete and selection for react-native",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tsleolima/react-native-auto-complete.git"
+  },
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "precommit": "npm run lint && npm test",
+    "test": "NODE_ENV=production jest"
+  },
+  "keywords": [
+    "react-native",
+    "autocomplete",
+    "select"
+  ],
+  "author": "Leonardo Lima",
+  "license": "MIT",
+  "dependencies": {
+    "react": ">=16.11.0",
+    "react-native": ">=0.62.2",
+    "string_score": "git+https://github.com/ThiagoNP/string_score.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-preset-react-native": "^1.9.1",
+    "enzyme": "^2.7.1",
+    "husky": "^0.13.1",
+    "jest": "^18.1.0",
+    "react-addons-test-utils": ">=15.4.1",
+    "react-dom": ">=15.4.1",
+    "snazzy": "^6.0.0",
+    "standard": "^8.6.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "index.js",
+      "AutoComplete/**/*.js"
+    ],
+    "coverageDirectory": "./coverage",
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native)"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "bugs": {
+    "url": "https://github.com/tsleolima/react-native-auto-complete/issues"
+  },
+  "homepage": "https://github.com/tsleolima/react-native-auto-complete#readme"
+}
